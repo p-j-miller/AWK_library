@@ -147,7 +147,7 @@ function  _qsort(A, left, right    ,i , j, pivot, hold)
 # user version of qsort() 
 function qsort(A, number_of_elements) # sorts array A with number_of_elements elements at indices 1,2,3,...,number_of_elements
 {			 
- _qsort(arr,1,number_of_elements) # recursive quicksort 
+ _qsort(A,1,number_of_elements) # recursive quicksort 
 }
  
 # this version is a heapsort which has guaranteed n*log2(n) execution time  - but in general its slower than quicksort - note qsort() above uses a heapsort to guarantee n*log2(n) execution time as well.
