@@ -5,7 +5,7 @@ They have only been tested with Wmawk2 version 2.0 and above.
 More details are given as comments in each of the files.
 
 ## prand.awk
-A portable random number generator that generates reasonable quality random numbers and should generate the same sequemce on all awk interpreters. Used by the test programs below to ensure the same tests are always generated.
+A portable random number generator that generates reasonable quality random numbers and should generate the same sequence on all awk interpreters. Used by the test programs below to ensure the same tests are always generated.
 ## median.awk
 Quickly calculates the numerical median of an array or part of an array. Does not change the supplied array or data (or take a copy of it).
 ## qsort.awk
@@ -16,6 +16,10 @@ Can be used to sort reasonably large arrays (10,000,000 element arrays are used 
 Converts date/time as a string to seconds past the epoch, or seconds past the epoch to a date/time string.
 ## unicode.awk
 Provides functions to manipulate unicode (utf8) strings.
+## trig.awk
+Provides tan(), asin() and acos() functions (awk only provides sin(), cos() and atan2() ).
+
+These work in radians.
 ## *_test.awk
 Test programs for the above files
-The test programs may use specific capabilities of Wmawk2 - in particular systime(0) and systime(1) - but they are easily edited to remove these dependancies.
+The test programs may use specific capabilities of Wmawk2 - in particular systime(0) and systime(1) - but they are easily edited to remove these dependencies.
